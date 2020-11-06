@@ -11,5 +11,13 @@ I have only tested on Ubuntu 20.04
 
 You should probably update the username and home paths
 
-
 TODO: strip container down to size
+
+## Just run it
+Going to put it on dockerhub
+
+
+docker pull justinhop/vidcutter
+
+
+then continue, the docker run command is pretty long so check out run.sh

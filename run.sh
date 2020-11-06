@@ -11,7 +11,7 @@ xhost +
 TD="/opt"
 USER_UID=$(id -u)
 USER_HOME=/home/justin
-IMAGE=justinhop/vidcutter
+TAG=ds1:6000/vidcutter:latest
 
 AARG=""
 
@@ -35,4 +35,4 @@ docker run -it --rm \
     --volume=/run/user/${USER_UID}/pulse:/run/user/${USER_UID}/pulse \
     --volume=/tmp/.X11-unix:/tmp/.X11-unix:rw \
     -e DISPLAY=$DISPLAY $AARG \
-    $TAG:latest $WF
+    $TAG $WF
